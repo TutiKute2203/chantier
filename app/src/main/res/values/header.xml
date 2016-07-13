@@ -1,0 +1,3 @@
+<resources>
+    <item name="header_bar" type="layout">@layout/layout_action_bar_mobile</item>
+</resources>

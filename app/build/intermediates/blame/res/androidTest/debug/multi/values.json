@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/media/DATA/minhchau/Chantier/ChantierSource/structappchantier/app/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 59,
+                    "endOffset": 110
+                },
+                "from": {
+                    "file": "/media/DATA/minhchau/Chantier/ChantierSource/structappchantier/app/build/generated/res/resValues/androidTest/debug/values/generated.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 157,
+                        "endColumn": 59,
+                        "endOffset": 212
+                    }
+                }
+            }
+        ]
+    }
+]

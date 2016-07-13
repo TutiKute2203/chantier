@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                            
+                                                                           
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".function.activity.MainActivity" android:tag="layout/activity_main_single_panel_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/main_actionbar_layout"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            layout="@layout/header_bar" />
+
+        <FrameLayout
+            android:id="@+id/main_single_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:layout_below="@+id/main_actionbar_layout" />
+
+    </RelativeLayout>
+         

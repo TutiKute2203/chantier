@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="tablet.mob.appchantier.function.activity.MainViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_white_border_grey_bottom"
+        android:visibility="@{viewModel.mHeaderBarVisibility}">
+
+        <RelativeLayout
+            android:id="@+id/chantier_layout_home_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1dp"
+            android:background="@color/White"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/ImageView_WC_MP"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chantier_layout_left_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1dp"
+            android:background="@color/White"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/chantier_iv_back_header"
+                style="@style/ImageView_WC_MP"
+                android:padding="20dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <View style="@style/Vertical_Bar" />
+
+            <ImageView
+                android:id="@+id/chantier_iv_home_header"
+                style="@style/ImageView_WC_MP"
+                android:padding="20dp"
+                android:src="@drawable/ic_home" />
+
+            <View style="@style/Vertical_Bar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chantier_layout_right_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <View style="@style/Vertical_Bar" />
+
+            <ImageView
+                android:id="@+id/chantier_iv_setting_header"
+                style="@style/ImageView_WC_MP"
+                android:background="@drawable/header_menu_selector"
+                android:padding="20dp"
+                android:onClick="@{(theView) -> viewModel.onRightHeaderClick(theView)}"
+                android:src="@drawable/ic_setting" />
+
+            <View style="@style/Vertical_Bar" />
+
+            <ImageView
+                android:id="@+id/chantier_iv_accident_header"
+                style="@style/ImageView_WC_MP"
+                android:background="@drawable/header_menu_selector"
+                android:padding="20dp"
+                android:onClick="@{(theView) -> viewModel.onRightHeaderClick(theView)}"
+                android:src="@drawable/ic_accident" />
+
+            <View style="@style/Vertical_Bar" />
+
+            <ImageView
+                android:id="@+id/chantier_iv_profile_header"
+                style="@style/ImageView_WC_MP"
+                android:background="@drawable/header_menu_selector"
+                android:padding="20dp"
+                android:onClick="@{(theView) -> viewModel.onRightHeaderClick(theView)}"
+                android:src="@drawable/ic_profile" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

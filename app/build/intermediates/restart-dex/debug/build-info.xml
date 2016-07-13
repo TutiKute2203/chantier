@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xhdpi"
+    format="7"
+    timestamp="387709072318"
+    token="7077425094523045752" >
+
+    <task
+        name="javac"
+        duration="5511" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="755" />
+    <task
+        name="verifier"
+        duration="155" />
+
+    <artifact
+        location="/media/DATA/minhchau/Chantier/ChantierSource/structappchantier/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="387709072318" >
+        <artifact
+            location="/media/DATA/minhchau/Chantier/ChantierSource/structappchantier/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
